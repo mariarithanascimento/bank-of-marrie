@@ -25,9 +25,14 @@ public class Conta extends Main{
             case 2:
                 System.out.print("Qual é o valor você deseja sacar? ");
                 double saque = input.nextDouble();
-                setSaldo(saldo - saque);
-                System.out.printf("Seu saldo é: R$" + "%.2f", saldo );
                 System.out.println(" ");
+                if(saque > saldo){
+                    System.out.println("Saldo insulficiente!");
+                }else{
+                    setSaldo(saldo - saque);
+                    System.out.printf("Saque realizado com sucesso!! Seu novo saldo é: R$" + "%.2f", saldo );
+                    System.out.println("\n");
+                }
                 break;
 
             case 3:
@@ -36,7 +41,7 @@ public class Conta extends Main{
                 setSaldo(saldo + deposito);
                 System.out.println("Seu deposito foi finalizado com sucesso!!");
                 System.out.printf("Seu saldo é: R$" + "%.2f", saldo );
-                System.out.println(" ");
+                System.out.println("\n");
                 break;
         }
 
@@ -56,9 +61,14 @@ public class Conta extends Main{
                 case 2:
                     System.out.print("Qual é o valor você deseja sacar? ");
                     double saque = input.nextDouble();
-                    setSaldo(saldo - saque);
-                    System.out.printf("Seu saldo é: R$" + "%.2f", saldo );
                     System.out.println(" ");
+                    if(saque > saldo){
+                        System.out.println("Saldo insulficiente!");
+                    }else{
+                        setSaldo(saldo - saque);
+                        System.out.printf("Saque realizado com sucesso!! Seu novo saldo é: R$" + "%.2f", saldo );
+                        System.out.println("\n");
+                    }
                     break;
 
                 case 3:
@@ -67,7 +77,7 @@ public class Conta extends Main{
                     setSaldo(saldo + deposito);
                     System.out.println("Seu deposito foi finalizado com sucesso!!");
                     System.out.printf("Seu saldo é: R$" + "%.2f", saldo );
-                    System.out.println(" ");
+                    System.out.println("\n");
                     break;
             }
         }else{
