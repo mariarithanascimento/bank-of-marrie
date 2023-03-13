@@ -1,22 +1,27 @@
-# Bank of marrie 💸
+# Bank Of Marrie 💸
 
-Olá!! Seja bem-vindo ao meu primeiro projeto autoral aqui no GitHub. Fiz ele com intuito de mostrar minhas habilidades com a linguagem de programação Java.
-Espero que goste :)
+Gostaria de apresentar o meu projeto no Github chamado Bank Of Marrie. Este projeto foi criado com o intuito de colocar em prática todos os conhecimentos que obtive ao longo da minha jornada de estudo em Java.
 
-## 🔖 Descrição 
+O Bank Of Marrie é um sistema simples de banco, que permite aos usuários realizar algumas operações bancárias básicas. As principais funcionalidades incluem:
 
-- <b>Linguagem:</b> Java
-- <b>IDE:</b> intellij
+- ✅ Verificação de saldo: os usuários podem verificar o saldo da sua conta bancária a qualquer momento.
 
-## ❤️ Sobre
+- ✅ Realização de saque e depósito: os usuários podem realizar saques e depósitos em suas contas bancárias.
 
-Bank Of Marrie é um banco digital disponivel somente para uso da conta corrente. Nele
-você poderá criar seu nome de usuário e senha, além de verificar seu saldo, depositar e sacar o valor que quiser.
-Abaixo você poderá conferir algumas das suas funcionalidades.
+- ✅ Cadastro de usuário e senha: o sistema permite que os usuários se cadastrem e criem uma conta bancária, com nome de usuário e senha.
 
-![20230216204328.gif](/src/midia/20230216204328.gif)
+O Bank Of Marrie foi desenvolvido em Java e usa alguns conceitos avançados de programação orientada a objetos, como herança, polimorfismo e encapsulamento. 
 
+Aqui Github, você encontrará todo o código-fonte do projeto e também uma demostração de uso. O projeto está disponível publicamente e pode ser baixado ou clonado por qualquer pessoa interessada em explorar o código ou contribuir para o desenvolvimento.
 
+Estou muito feliz em apresentar o Bank Of Marrie e espero que ele possa ser útil para outros desenvolvedores Java em busca de inspiração e prática.
 
+## 📌 Ferramentas utilizadas 
 
+- Gerenciador de dependencias: Maven
+- IDEA: IntelliJ
+- Linguagem: Java
 
+## Demostração ❤️
+
+![bank-of-marrie.gif](/src/midia/bank-of-marrie.gif)
