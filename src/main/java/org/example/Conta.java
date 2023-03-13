@@ -1,10 +1,12 @@
+package org.example;
 import java.util.Scanner;
-
-public class Conta extends Main{
-    public Conta() {
+public class Conta extends Main {
+    public Conta(){
         Scanner input = new Scanner(System.in);
 
         System.out.println("Seja bem vindo ao Bank Of Marrie!");
+
+        //Cadastro(ficticio)
         System.out.println("Verifiquei que é sua primeira vez aqui, vamos fazer seu cadastro? Vai ser rapidinho :)");
         System.out.println("Qual é o seu nome? ");
         String nome = input.next();
@@ -13,10 +15,13 @@ public class Conta extends Main{
         System.out.println("Senha(6 a 8 numeros): ");
         int password = input.nextInt();
         System.out.println("Cadastro concluido com sucesso!!");
+
+        //inicio da operação
         System.out.println("Olá! " + nome + " Em que posso te ajudar?");
         System.out.println("(1) - SALDO\n(2) - SAQUE\n(3) - DEPOSITO");
         int opc = input.nextInt();
 
+        //Saque, Deposito e Verificação de Saldo
         switch (opc) {
             case 1:
                 System.out.printf("Seu saldo é: R$" + "%.2f", saldo );
@@ -44,16 +49,17 @@ public class Conta extends Main{
                 System.out.println("\n");
                 break;
         }
-
         System.out.println("Algo mais em que posso te ajudar?\n 1 - Sim \n 2 - Não");
         int opc2 = input.nextInt();
-
-        if(opc2 == 1){
+        if(opc2 == 2){
+            System.out.println("Bank Of Marrie agradece. Até mais!");
+        }
+        do{
             System.out.println("Em que posso te ajudar?");
             System.out.println("(1) - SALDO\n(2) - SAQUE\n(3) - DEPOSITO");
-            int opc3 = input.nextInt();
+            opc = input.nextInt();
 
-            switch (opc3) {
+            switch (opc) {
                 case 1:
                     System.out.printf("Seu saldo é: R$" + "%.2f", saldo );
                     System.out.println(" ");
@@ -80,12 +86,11 @@ public class Conta extends Main{
                     System.out.println("\n");
                     break;
             }
-        }else{
-            System.out.println("Bank Of Marrie agradece. Até mais!");
-        }
+            System.out.println("Algo mais em que posso te ajudar?\n 1 - Sim \n 2 - Não");
+            opc2 = input.nextInt();
+        }while(opc2 == 1);
         System.out.println("Bank Of Marrie agradece. Até mais!");
     }
-
     public double getSaldo () {
 
         return saldo;
@@ -98,4 +103,3 @@ public class Conta extends Main{
 
     double saldo;
 }
-

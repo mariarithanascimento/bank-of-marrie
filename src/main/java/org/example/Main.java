@@ -1,3 +1,4 @@
+package org.example;
 import java.lang.*;
 import java.util.Scanner;
 public class Main {
@@ -6,7 +7,3 @@ public class Main {
         conta.getClass();
     }
 }
-
-
-
-
